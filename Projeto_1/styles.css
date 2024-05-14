@@ -1,0 +1,91 @@
+.body {
+  background-image: url(pesquisa.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.div1 {
+  background-color: #1b1b3299;
+  color: #ffffff;
+  width: 844px;
+  margin: 0 auto;
+}
+
+input[class="form-control"] {
+  background-color: #1b1b32;
+  color: #ffffff;
+}
+input[class="form-control"]::placeholder {
+  color: #ffffff;
+}
+input[class="form-control"]:focus {
+  background-color: #1b1b32;
+  color: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input[id="idade"]::-webkit-inner-spin-button {
+  /*Removendo o botão padrão do input tipo number*/
+  -webkit-appearance: none;
+}
+input[id="idade"] {
+  border-right: none;
+}
+span[class="input-group-text"] {
+  background-color: #1b1b32;
+  color: #ffffff;
+  cursor: pointer;
+}
+span[id="mais"] {
+  border-left: 0;
+}
+
+select[class="form-select"] {
+  background-color: #1b1b32;
+  color: #ffffff;
+  /*Trocando o ícone do select*/
+  background-image: url(divisa.svg);
+}
+select[class="form-select"]:focus {
+  border-color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+textarea[id="comentários"] {
+  background-color: #1b1b32;
+  border: 1px solid #1b1b32;
+  color: #ffffff;
+  resize: none;
+}
+textarea[id="comentários"]::placeholder {
+  color: #ffffff;
+}
+textarea[id="comentários"]:focus {
+  background-color: #1b1b32;
+  color: #ffffff;
+  border-color: #1b1b32;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.div2 {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  width: 100%;
+}
+
+@media screen and (max-width: 864px){
+  /*Alteração quando a tela ficar menor que 864px*/
+  .div1 {
+    width: 100%;
+  }
+}
+
+
